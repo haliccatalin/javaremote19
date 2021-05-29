@@ -9,6 +9,9 @@ public class Student extends Person{
     public Student(String firstName, String lastName, Date dateOfBirth, boolean hasPreviousJavaKnowledge) {
         super(firstName, lastName, dateOfBirth);
         this.hasPreviousJavaKnowledge = hasPreviousJavaKnowledge;
+
+        SingletonPattern p  = SingletonPattern.getInstance();
+        p.increment();
     }
 
     public boolean isHasPreviousJavaKnowledge() {

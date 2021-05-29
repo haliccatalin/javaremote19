@@ -13,6 +13,7 @@ public class Main {
 
 
     public static void main(String[] args) {
+        SingletonPattern pattern = SingletonPattern.getInstance();
 
 
         Student student1 = new Student("Adrian","Postasu",new Date(1981,11,1),true);
@@ -31,6 +32,8 @@ public class Main {
         Student student14 = new Student("Adrian","Strisca",new Date(1985,11,1),true);
         Student student15 = new Student("Robert","Stroe",new Date(1988,11,1),true);
         Student student16 = new Student("Paul","Marian",new Date(1998,11,1),true);
+
+        System.out.println("Count singleton:" + pattern.getCount());
 
         Trainer trainer1 = new Trainer("Catalin","Halic",new Date(1994,11,0),true);
         Trainer trainer2 = new Trainer("Bogdan","Niculae",new Date(1994,11,0),true);
